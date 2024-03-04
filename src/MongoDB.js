@@ -1,7 +1,10 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 
+app.use(express.json())
+app.use(cors())
 
 mongoose.connect(
     "mongodb://admin:AQMvxg42269@node58168-env-pt.proen.app.ruk-com.cloud:11917", {
